@@ -1,0 +1,19 @@
+{
+  "type": "postgres",
+  "url": "postgres://postgres:456456@localhost:5432/parser",
+  "synchronize": false,
+  "entities": [
+    "src/entity/*.js"
+  ],
+  "subscribers": [
+    "src/subscriber/*.js"
+  ],
+  "migrations": [
+    "src/migration/*.js"
+  ],
+  "cli": {
+    "entitiesDir": "src/entity",
+    "migrationsDir": "src/migration",
+    "subscribersDir": "src/subscriber"
+  }
+}
